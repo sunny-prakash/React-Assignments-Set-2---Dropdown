@@ -11,7 +11,7 @@ const Towns = ({ town }) => {
                 <label htmlFor="landmark">{"Towns : "}</label>
                 <select
                     name="landmark"
-                    id="city"
+                    id="landmark"
                     onChange={(e) => {
                         onChangeSelect(e);
                     }}
