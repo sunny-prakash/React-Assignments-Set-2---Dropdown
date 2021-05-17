@@ -8,7 +8,7 @@ const Cities = ({ city }) => {
     };
     return (
         <div>
-            <div className="slection_box">
+            <div id="city-name" className="slection_box">
                 <div>
                     <label htmlFor="city">{"Cities : "}</label>
                     <select
@@ -23,7 +23,10 @@ const Cities = ({ city }) => {
                         })}
                     </select>
                 </div>
-                <div className="des_box">{city[cityValue].description}</div>
+                <div className="des_box">
+                    <div id="city-title">{city[cityValue].name}</div>
+                    <div id="city-description">{city[cityValue].description}</div>
+                </div>
             </div>
             <Towns town={city[cityValue].landmarks} />
         </div>

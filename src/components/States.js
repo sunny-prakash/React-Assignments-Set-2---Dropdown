@@ -10,7 +10,7 @@ const States = ({ states }) => {
 
     return (
         <div>
-            <div className="slection_box">
+            <div id="state-name" className="slection_box">
                 <div>
                     <label htmlFor="state">{"States : "}</label>
                     <select
@@ -25,8 +25,9 @@ const States = ({ states }) => {
                         })}
                     </select>
                 </div>
-                <div id="state-decription" className="des_box">
-                    {states[stateValue].description}
+                <div className="des_box">
+                    <div id="state-title">{states[stateValue].name}</div>
+                    <div id="state-description">{states[stateValue].description}</div>
                 </div>
             </div>
             <Cities city={states[stateValue].city} />

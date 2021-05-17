@@ -6,7 +6,7 @@ const Towns = ({ town }) => {
         setTownValue(e.target.value);
     };
     return (
-        <div className="slection_box">
+        <div id="landmark-name" className="slection_box">
             <div>
                 <label htmlFor="landmark">{"Towns : "}</label>
                 <select
@@ -21,7 +21,10 @@ const Towns = ({ town }) => {
                     })}
                 </select>
             </div>
-            <div className="des_box">{town[townValue].description}</div>
+            <div className="des_box">
+                <div id="landmark-title">{town[townValue].name}</div>
+                <div id="landmark-description">{town[townValue].description}</div>
+            </div>
         </div>
     );
 };
