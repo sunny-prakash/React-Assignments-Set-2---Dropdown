@@ -1,16 +1,27 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+}
 
-button{
+button {
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.bg-pink{
-	background-color:pink;
+.bg-pink {
+    background-color: pink;
+}
+
+.des_box {
+    border: 2px solid black;
+    max-width: 50vw;
+    height: auto;
+}
+
+.slection_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
 }
